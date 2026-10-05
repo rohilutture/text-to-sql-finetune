@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+data/
+logs/
+.git/
+.gitignore
+# Keep the fine-tuned adapter (small) but exclude bulky run artifacts:
+runs/*
+!runs/qwen1.5b-lora/
+runs/qwen1.5b-lora/*
+!runs/qwen1.5b-lora/final/
+*.sqlite
